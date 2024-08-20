@@ -1,4 +1,5 @@
-![Implement a Design from Scratch](https://github.com/seeyou7/holbertonschool-headphone/blob/main/images/readme.webp)
+![Implement a Design from Scratch](https://github.com/seeyou7/holbertonschool-headphone/raw/main/images/readme.webp)
+
 
 
 # Implement a Design from Scratch 💻
