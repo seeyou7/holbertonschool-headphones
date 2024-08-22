@@ -1,0 +1,324 @@
+/* General Reset */
+body, h1, p, a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Wrapper */
+.hero-wrapper {
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adjust the spacing for the last <p> */
+.hero-section p:last-of-type {
+    margin-bottom: 40px;
+}
+
+/* Header Styles */
+header div {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header div a {
+    color: white;
+    margin: 20px;
+}
+
+nav a:hover {
+    color: #FF6565;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Initially hidden; only shown in mobile */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 254, 254);
+    margin: 2px 0;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Ensure the h1 and p spacing is appropriate */
+.hero-section h1 {
+    margin-bottom: 20px;
+}
+
+.hero-section p:first-of-type {
+    margin-top: 0;
+}
+
+button {
+    width: 162px;
+    height: 44px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    box-shadow: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #FF6565;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+button:hover,
+button:active {
+    background-color: rgb(248, 68, 68); /* Background color on hover */
+    box-shadow: 0px 12px 30px rgba(54, 54, 54, 0.4);
+    opacity: 0.9;
+}
+
+/* Accessibility */
+a:focus, button:focus {
+    outline: 2px solid #fff;
+}
+
+/* What We Do Section */
+
+.what-we-do h1 {
+    padding-bottom: 25px;
+}
+
+.what-we-do .title p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px; /* Optional: Control the width for better readability */
+    padding-top: 10px; /* Optional: Add some padding above if needed */
+}
+
+
+
+.what-we-do {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    padding-bottom: 50px;
+}
+
+.what-we-do .section-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows items to wrap if the screen is too small */
+    gap: 20px; /* Optional: space between items */
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.section-elements > div {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items within each column */
+    text-align: center;
+    min-height: 300px;
+    object-fit: contain; /* Ensure the image fits within the set dimensions */
+}
+
+.section-elements img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    margin-bottom: 10px; /* Space between image and h3 */
+    margin-top: 25px;
+}
+
+.section-elements h3 {
+    margin-bottom: 15px; /* Space between h3 and p */
+}
+
+.our-results {
+    background-image: url("./images/headphones_hero_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.our-results h1 {
+    padding-top: 60px ;
+    padding-bottom: 35px;
+}
+
+.our-results p {
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px; /* Optional: Control the width for better readability */
+    padding-top: 10px; 
+}
+.our-results img {
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+ }
+
+
+ /* ----------CONTACT---------------*/
+
+.contact-title h1 {
+
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 40px;
+        
+    }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 60vh;
+     /* Full height of the viewport or any height you want */
+}
+
+.contact-Field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    max-width: 1002px;
+    max-height: 193px;
+    gap: 40px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.contact-Field input {
+    width: 100%; 
+    border: none; 
+    border-bottom: 1px solid #979797; 
+    padding: 10px 0; 
+    font-size: 14px; 
+    background-color: transparent; 
+    color: #000; 
+    font-weight: 600; 
+    
+}
+
+.contact-Field input:focus {
+    outline: none; 
+    border-bottom: 2px solid #FF6565;
+}
+
+
+/* Responsive Design for Tablet and Medium Screens */
+@media (max-width: 1400px) and (min-width: 481px) {
+    header div,
+    header div a {
+        padding: 1.5px; /* Reduce padding */
+        justify-content: space-around; /* Keep space between elements */
+        margin: 1px;
+    }
+
+    .hero-section {
+        padding: 20px 10px;
+        padding-bottom: 20px;
+    }
+
+    .hero-section h1 {
+        margin-top: 20vh; /* Adjust for better spacing on medium screens */
+        margin-bottom: 10px;
+    }
+
+    .hero-section p {
+        margin-bottom: 3%;
+        font-size: 1rem; /* Adjust font size for better spacing */
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .section-elements .div div {
+        flex-wrap: wrap;
+        }   
+
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+    header {
+        position: relative;
+        justify-content: center;
+    }
+
+    header div {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: center; /* Center the items */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon on mobile */
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    nav {
+        display: none; /* Hide the navigation menu by default on mobile */
+    }
+
+    #menu-toggle:checked + .hamburger + nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Animate the hamburger lines into an "X" when clicked */
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: 5px 5px;
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: 5px -5px;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
